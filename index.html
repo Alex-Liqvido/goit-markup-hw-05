@@ -64,7 +64,7 @@
       <section class="business-section">
         <div class="container page-hero">
           <h1 class="section-heading">Effective Solutions for Your Business</h1>
-          <button class="action-button" type="button">
+          <button class="action-button" type="button" data-modal-open>
             <span class="button-text">Order Service</span>
           </button>
         </div>
@@ -497,6 +497,57 @@
           </ul>
         </div>
       </div>
+
+      <div>
+        <form>
+          <label>
+            Subscribe
+            <input type="email" name="email_address" placeholder="" />
+          </label>
+          <button type="text">Subscribe</button>
+        </form>
+      </div>
     </footer>
+
+    <!-- Modal -->
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <p>Leave your contacts and we will call you back</p>
+
+        <label class="form-label">
+          <input class="form-input" type="name" name="Name" checked />
+          <span class="check__box"></span>
+          Name
+        </label>
+        <label class="form-label">
+          <input class="check__input" type="name" name="Phone" /> 
+          <span class="check__box"></span>
+          Phone
+        </label>
+        <label class="form-label">
+          <input class="check__input" type="name" name="Email" />
+          <span class="check__box"></span>
+          Email
+        </label>
+        <label class="form-label">
+          <input class="check__input" type="name" name="Comment" placeholder="Text input" />
+          <span class="check__box"></span>
+          Comment
+        </label>
+        <label class="check option">
+          <input class="check__input" type="checkbox" name="agreement"/>
+          <span class="check__box"></span>
+          I accept the terms and conditions of the <span>Privacy Policy</span>
+        </label>
+
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <span class="button-text">Send</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Script js -->
+    <script src="./js/modal.js"></script>
+    <!-- end Script js -->
   </body>
 </html>
